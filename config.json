@@ -1,0 +1,7 @@
+{
+	"host_map": [
+		"$.beeradvocate.com => beeradvocate.com",
+		"$.beeradvocate.com => www.beeradvocate.com",
+		"$.ox-d.beeradvocate.com => ox-d.beeradvocate.com"
+	]
+}

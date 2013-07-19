@@ -7,6 +7,9 @@ $("/html") {
   
 
   add_assets()
+  remove_all_styles()
+  remove_external_styles()
+  remove_internal_styles()
 
   @import sections/header.ts
   @import sections/footer.ts

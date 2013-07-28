@@ -7,11 +7,11 @@ $("./body") {
     move_here("..//aside/div[contains(@class,'sidebar')]/div[contains(@class,'sharePage')]")
     move_here("../footer/div[contains(@class,'footer')]")
 
-    # Add shameless plug about how I built this
-    insert("div") {
-      text() {
-        set("Built by G. Bryden")
-      }
-    }
+    # # Add shameless plug about how I built this
+    # insert("div") {
+    #   text() {
+    #     set("Built by G. Bryden")
+    #   }
+    # }
   }
 }

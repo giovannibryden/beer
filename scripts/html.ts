@@ -4,7 +4,7 @@ $("/html") {
   rewrite_links()
   absolutize_srcs()
 
-  
+  remove("//iframe")
 
   add_assets()
   remove_all_styles()

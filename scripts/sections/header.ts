@@ -1,7 +1,14 @@
 $('./body') {
   insert_top("header", class: "_header") {
-  	move_here("//div[@id='header']/div[@id='logoBlock']") {
+  	move_here("//div[@id='header']/div[@id='logoBlock']//div[@id='logo']") {
   		wrap("div", class:"_logo")
+
+      # Remove inline styles on logo pic
+      $("./a/img") {
+        remove("@width")
+        remove("@height")
+        remove("@border")
+      }
   	}
 
   	move_here("../div[@id='loginBar']") {
@@ -11,8 +18,9 @@ $('./body') {
   	move_here("//div[@id='navigation']") {
   		wrap("div", class:"_navigation")
   	}
-  	move_here("//div[@id='searchBar']")
-  		wrap("div", calss:"_search")
+  	move_here("//div[@id='searchBar']") {
+  		wrap("div", class:"_search")
+    }
   }
 
   # Remove all in-line bullshit

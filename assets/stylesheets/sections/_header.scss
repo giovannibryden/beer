@@ -1,4 +1,5 @@
 header._header {
+	@include clearfix;
 
 	#logo {
 		> a {

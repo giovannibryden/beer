@@ -2,10 +2,16 @@ footer._footer {
 	width:100%;
 	padding:0;
 	margin:0;
+	text-transform:uppercase;
+	font-family:$helvetica;
+	font-size:14px;
+	background-color:#141414;
+	@include clearfix;
 
 	h3 {
 		text-align:center;
-		margin-bottom:5px;
+		margin-bottom:15px;
+		color:#BF8840;
 	}
 
 	.footer {
@@ -17,13 +23,20 @@ footer._footer {
 			list-style:none;
 			display:inline-block;
 			padding:5px;
+			> a {
+				color:white;
+				text-decoration:none;
+			}
 		}
 	}
 
 	.footerLegal{
 		div {
+			font-size:10px;
 			text-align:center;
+			font-style: italic;
 			padding-bottom:3px;
+			color:#888888;
 		}
 	}
 

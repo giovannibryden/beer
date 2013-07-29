@@ -1,5 +1,10 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
+body {
+	@include clearfix;
+	max-width:480px;
+	width:100%;
+}
 ._home {
 
 	.mw_hide {

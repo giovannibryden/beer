@@ -13,5 +13,10 @@ $("/html") {
   @import sections/footer.ts
 
   @import mappings.ts
+
+  # Make the web view play nice with my device
+  $("./head") {
+  	insert("meta", name:"viewport", content:"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+  }
 }
 

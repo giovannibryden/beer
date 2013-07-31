@@ -2,8 +2,13 @@
 // Scope that in each file at the start
 body {
 	@include clearfix;
-	max-width:480px;
 	width:100%;
+	padding:0;
+	margin:0;
+
+	#baSidebar {
+		padding:10px;
+	}
 }
 ._home {
 

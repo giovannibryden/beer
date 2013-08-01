@@ -17,6 +17,25 @@ $('./body') {
 
   	move_here("//div[@id='navigation']") {
   		wrap("div", class:"_navigation")
+
+      # Make items into togglers.
+      $(".//nav/div/ul/li[contains(@class,'selected')]") {
+        attributes(data-ur-set:"toggler")
+
+        # Make the anchor tag into a button
+        $("./a[contains(@class,'navLink')]") {
+
+          wrap("div", class:"_button") {
+          attributes(data-ur-toggler-component:"button")
+          }
+        }
+
+        # Mark up toggled content
+        $("./div[contains(@class,'tabLinks')]") {
+          attributes(data-ur-toggler-component:"content")
+        }
+
+      }
   	}
   	move_here("//div[@id='searchBar']") {
   		wrap("div", class:"_search")

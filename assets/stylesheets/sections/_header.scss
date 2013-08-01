@@ -1,6 +1,27 @@
 header._header {
+
+	.box-shadow-menu {
+	  position: relative;
+	  padding-left: 2.15em;
+	  bottom:32px;
+	  float:right;
+	  height:30px;
+	}
+	.box-shadow-menu:before {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  top: 0.25em;
+	  width: 1.5em;
+	  height: 0.2em;
+	  background: #fff;
+	  box-shadow: 
+	    0 0.45em 0 0 #fff,
+	    0 0.9em 0 0 #fff;
+	}
+
 	._logo {
-		text-align:center;
+		background-color:black;
 	}
 	
 	#QuickSearch {
@@ -16,7 +37,7 @@ header._header {
 				width:100%;
 				max-width:200px;
 				height:auto;
-				margin:auto;
+				padding-left:20px;
 			}
 		}
 	}

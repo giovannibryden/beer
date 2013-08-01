@@ -1,7 +1,11 @@
 $('./body') {
   insert_top("header", class: "_header") {
+    attributes(data-ur-set:"toggler", data-ur-id:"menu")
   	move_here("//div[@id='header']/div[@id='logoBlock']//div[@id='logo']") {
-  		wrap("div", class:"_logo")
+  		wrap("div", class:"_logo") {
+        # Place a button to toggle the whole nav.
+        insert("a", href:"#", class:"box-shadow-menu", data-ur-toggler-component:"button", data-ur-id:"menu")
+      }
 
       # Remove inline styles on logo pic
       $("./a/img") {
@@ -12,11 +16,14 @@ $('./body') {
   	}
 
   	move_here("../div[@id='loginBar']") {
+      remove(".//h3")
   		wrap("div", class:"_login")
   	}
 
   	move_here("//div[@id='navigation']") {
-  		wrap("div", class:"_navigation")
+  		wrap("div", class:"_navigation") {
+        attributes(data-ur-toggler-component:"content", data-ur-id:"menu")
+      }
 
       # Make items into togglers.
       $(".//nav/div/ul/li[contains(@class,'selected')]") {
@@ -26,13 +33,13 @@ $('./body') {
         $("./a[contains(@class,'navLink')]") {
 
           wrap("div", class:"_button") {
-          attributes(data-ur-toggler-component:"button")
+          attributes(data-ur-toggler-component:"button", data-ur-id:"nav")
           }
         }
 
         # Mark up toggled content
         $("./div[contains(@class,'tabLinks')]") {
-          attributes(data-ur-toggler-component:"content")
+          attributes(data-ur-toggler-component:"content", data-ur-id:"nav")
         }
 
       }

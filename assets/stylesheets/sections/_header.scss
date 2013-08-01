@@ -1,5 +1,14 @@
 header._header {
 
+	ul, li {
+		list-style:none;
+		margin:0;
+		padding:0;
+		a {
+			text-decoration:none;
+		}
+	}
+
 	.box-shadow-menu {
 	  position: relative;
 	  padding-left: 2.15em;
@@ -22,6 +31,17 @@ header._header {
 
 	._logo {
 		background-color:black;
+	}
+	._button {
+		@include button(shiny, #e8e8e8);
+		width:100%;
+		line-height:10px;
+		margin:0;
+		padding-top: 10px; 
+		padding-bottom:10px;
+		padding-left:0; 
+		padding-right:0;
+		border-radius:0;
 	}
 	
 	#QuickSearch {

@@ -1,6 +1,8 @@
 // Reset file for standardizing the page
 // @import "globals/_reset";
-
+* {
+  font-family: helvetica, arial, sans-serif;
+}
    /* Required SCSS Styling */
       *[data-ur-set='toggler'] {
         /* By Default content is hidden*/

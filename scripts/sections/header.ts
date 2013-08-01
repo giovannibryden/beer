@@ -22,7 +22,7 @@ $('./body') {
       $(".//nav/div/ul/li[contains(@class,'selected')]") {
         attributes(data-ur-set:"toggler")
 
-        # Make the anchor tag into a button
+        # Wrap <a> in div, make into a button
         $("./a[contains(@class,'navLink')]") {
 
           wrap("div", class:"_button") {

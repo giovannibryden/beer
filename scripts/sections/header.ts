@@ -25,6 +25,11 @@ $('./body') {
       # Make li into buttons 
       $("./div[contains(@class,'pageContent')]/nav/div/ul/li") {
         add_class("_button")
+
+        # Opened toggler should not look like shit
+        $("./div[contains(@class,'tabLinks')]/ul/li") {
+          add_class("_button2")
+        }
       }
   		wrap("div", class:"_navigation") {
         attributes(data-ur-toggler-component:"content", data-ur-id:"menu")

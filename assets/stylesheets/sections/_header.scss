@@ -48,6 +48,19 @@ header._header {
 		padding-right:0;
 		border-radius:0;
 	}
+	._button2 {
+		@include button(simple, #e8e8e8);
+		text-align:left;
+		font-family:$helvetica;
+		width:100%;
+		line-height:10px;
+		margin:0;
+		padding-top: 10px; 
+		padding-bottom:10px;
+		padding-left:0; 
+		padding-right:0;
+		border-radius:0;
+	}
 	
 	#QuickSearch {
 		width:100%;

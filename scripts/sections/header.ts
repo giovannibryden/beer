@@ -21,6 +21,11 @@ $('./body') {
   	}
 
   	move_here("//div[@id='navigation']") {
+
+      # Make li into buttons 
+      $("./div[contains(@class,'pageContent')]/nav/div/ul/li") {
+        add_class("_button")
+      }
   		wrap("div", class:"_navigation") {
         attributes(data-ur-toggler-component:"content", data-ur-id:"menu")
       }
@@ -32,7 +37,7 @@ $('./body') {
         # Wrap <a> in div, make into a button
         $("./a[contains(@class,'navLink')]") {
 
-          wrap("div", class:"_button") {
+          wrap("div") {
           attributes(data-ur-toggler-component:"button", data-ur-id:"nav")
           }
         }

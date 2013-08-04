@@ -4,6 +4,7 @@ header._header {
 		list-style:none;
 		margin:0;
 		padding:0;
+
 		a {
 			text-decoration:none;
 			color:black;
@@ -18,6 +19,7 @@ header._header {
 	  bottom:32px;
 	  float:right;
 	  height:30px;
+	  z-index:999;
 	}
 	.box-shadow-menu:before {
 	  content: "";
@@ -61,12 +63,32 @@ header._header {
 		padding-right:0;
 		border-radius:0;
 	}
+
+	.tabLinks {
+		position:relative;
+		top:11px;
+	}
+	.publicTabs, .visitorTabs {
+		position:relative;
+		bottom:30px;
+	}
 	
 	#QuickSearch {
 		width:100%;
 		margin:0;
 		padding:0;
+		padding-left:10px;
+		padding-bottom:10px;
 		border:0;
+		position:relative;
+		bottom:20px;
+		box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.68);
+
+		#QuickSearchQuery {
+			width:75%;
+			text-align:center;
+			padding-left:10px;
+		}
 	}
 
 	#logo {

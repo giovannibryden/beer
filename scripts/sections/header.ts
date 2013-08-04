@@ -4,7 +4,7 @@ $('./body') {
   	move_here("//div[@id='header']/div[@id='logoBlock']//div[@id='logo']") {
   		wrap("div", class:"_logo") {
         # Place a button to toggle the whole nav.
-        insert("a", href:"#", class:"box-shadow-menu", data-ur-toggler-component:"button", data-ur-id:"menu")
+        insert("a", href:"", class:"box-shadow-menu", data-ur-toggler-component:"button", data-ur-id:"menu")
       }
 
       # Remove inline styles on logo pic

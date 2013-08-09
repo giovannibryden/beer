@@ -1,8 +1,36 @@
 header._header {
 
+	.primaryControls {
+		text-align:center;
+		input {
+			-webkit-appearance:none;
+			-webkit-border-radius:10px;
+			height:25px;
+			font-size:14px;
+		}
+	}
+	.ctrlUnit {
+		text-align:center;
+		ul {
+			padding-left:25px;
+		}
+		dd {
+			margin:0;
+		}
+	}
+	.controlsWrapper {
+		display:block;
+		dd {
+			padding:0;
+		}
+		label {
+			float:left;
+			clear:none;
+		}
+	}
 	ul, li {
 		list-style:none;
-		margin:0;
+		margin:auto;
 		padding:0;
 
 		a {
@@ -18,7 +46,7 @@ header._header {
 	  padding-left: 2.15em;
 	  bottom:32px;
 	  float:right;
-	  height:30px;
+	  height:25px;
 	  z-index:999;
 	}
 	.box-shadow-menu:before {
@@ -74,18 +102,18 @@ header._header {
 	}
 	
 	#QuickSearch {
-		width:100%;
+		background-color:#e8e8e8;
+		width:96%;
 		margin:0;
-		padding:10px;
+		padding:2%;
 		border:0;
 		position:relative;
-		bottom:20px;
-		box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.68);
+		bottom:30px;
+		box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
 
 		#QuickSearchQuery {
 			width:75%;
 			text-align:center;
-			padding-left:10px;
 		}
 	}
 

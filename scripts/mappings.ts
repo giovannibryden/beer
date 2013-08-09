@@ -22,6 +22,10 @@ match($status) {
         log("--> Importing pages/home.ts in mappings.ts")
         @import pages/home.ts
       }
+      with(/\/search\?/) {
+        log("--> Importing pages/search.ts in mappings.ts")
+        @import pages/search.ts
+      }
       else() {
         log("--> No page match in mappings.ts")
       }

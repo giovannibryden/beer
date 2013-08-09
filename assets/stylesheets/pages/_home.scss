@@ -1,6 +1,24 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
 body {
+
+	#headerMover {
+		position:relative;
+		bottom:50px;
+		// Please don't judge me
+		margin-bottom:-80px;
+	}
+	.pageContent {
+		.titleBar {
+			width:96%;
+			margin:2%;
+			text-align:center;
+			h1 {
+				font-size:18px;
+			}
+		}
+	}
+
 	@include clearfix;
 	width:100%;
 	padding:0;
@@ -13,7 +31,14 @@ body {
 	}
 }
 ._home {
-
+	a {
+		position:relative;
+		bottom:30px;
+	}
+	._heroImage {
+		width:100%;
+		height:auto;
+	}
 	.mw_hide {
 		display:none;
 	}

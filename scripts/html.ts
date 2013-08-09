@@ -9,10 +9,12 @@ $("/html") {
   remove_external_styles()
   remove_internal_styles()
 
+  @import mappings.ts
+
   @import sections/header.ts
   @import sections/footer.ts
 
-  @import mappings.ts
+
 
   # Make the web view play nice with my device
   $("./head") {

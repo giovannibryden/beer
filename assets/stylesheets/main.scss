@@ -21,6 +21,9 @@
       *[data-ur-set='toggler'] *[data-ur-toggler-component='content'][data-ur-state='enabled'] {
         display: block;
       }
+._hide {
+  display:none;
+}
 
 // Base file contains all the global styles
 @import "globals/_base";

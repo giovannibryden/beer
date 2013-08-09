@@ -98,18 +98,19 @@ header._header {
 	}
 	.publicTabs, .visitorTabs {
 		position:relative;
-		bottom:30px;
+		bottom:25px;
 	}
 	
 	#QuickSearch {
+		@include clearfix;
 		background-color:#e8e8e8;
-		height:85px;
+		height:90px;
 		width:96%;
 		margin:0;
 		padding:2%;
 		border:0;
 		position:relative;
-		bottom:30px;
+		bottom:25px;
 		box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
 
 		#QuickSearchQuery {

@@ -1,0 +1,48 @@
+body._search {
+	
+	img {
+		text-align:center;
+	}
+	#baSidebar {
+		margin:0;
+		padding:0;
+		margin-bottom:-55px;
+		margin-top:-30px;
+	}
+
+	fieldset {
+		margin: 2%;
+		padding: 0;
+		// -webkit-margin-after: 0;
+		// -webkit-margin-end: 0;
+		// -webkit-padding-before: 0;
+		// -webkit-padding-start: 0;
+		// -webkit-padding-end: 0;
+		// -webkit-padding-after: 0;
+		text-align:center;
+
+		#baContent {
+			div {
+				text-align:center !important;
+				width:90% !important;
+				margin:auto;
+			}
+		}
+		.textCtrl {
+			width:90%;
+		}
+	}
+	div {
+		
+		.sharePage {
+			padding:5%;
+		}
+	}
+	.mainContent {
+		padding-top:15px;
+	}
+
+	.secondaryContent {
+		padding:5%;
+	}
+}

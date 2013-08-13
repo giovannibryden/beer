@@ -16,10 +16,10 @@ $("./body") {
         move_to("//div[@class='_contact']", position("bottom"))
       }
 		}
-    $("//a[contains(@href,'mailto')]") {
+    $(".//a[contains(@href,'mailto')]") {
       add_class("mailto")
     }
-    $("//a[contains(@href,'advertise')]") {
+    $(".//a[contains(@href,'advertise')]") {
       add_class("mailto")
     }
   }

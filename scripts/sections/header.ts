@@ -23,7 +23,7 @@ $('./body') {
   	move_here("//div[@id='navigation']") {
 
       # Make li into buttons 
-      $("./div[contains(@class,'pageContent')]/nav/div/ul/li") {
+      $("./div[contains(@class,'pageContent')]/nav/div/ul/li/a/..") {
         add_class("_button")
 
         # Opened toggler should not look like shit

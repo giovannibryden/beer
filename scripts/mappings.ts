@@ -34,6 +34,10 @@ match($status) {
         log("--> Importing pages/contact.ts in mappings.ts")
         @import pages/contact.ts
       }
+      with(/\/community\/login/) {
+        log("--> Importing pages/signup.ts in mappings.ts")
+        @import pages/signup.ts
+      }
       else() {
         log("--> No page match in mappings.ts")
       }

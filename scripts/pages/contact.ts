@@ -27,4 +27,5 @@ $("./body") {
     remove(".//fieldset")
   }
   insert("br")
+  remove("//iframe[contains(@src,'docs.google')]")
 }

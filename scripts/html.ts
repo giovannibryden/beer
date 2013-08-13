@@ -8,6 +8,7 @@ $("/html") {
   remove_all_styles()
   remove_external_styles()
   remove_internal_styles()
+  table_dump("//table")
 
   @import mappings.ts
 

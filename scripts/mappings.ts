@@ -30,7 +30,7 @@ match($status) {
         log("--> Importing pages/beer.ts in mappings.ts")
         @import pages/beer.ts
       }
-      with(/\/contact) {
+      with(/\/contact/) {
         log("--> Importing pages/contact.ts in mappings.ts")
         @import pages/contact.ts
       }

@@ -3,7 +3,7 @@ $("./body") {
   insert_top("div", class: "_contact") {
     move_here("//div[@class='titleBar']")
     move_here("//label[@id='SignupButton']") {
-      add_class("button")
+      add_class("signup_button")
     }
   	move_here("//div[@id='baContent']") {
       insert_top("br")

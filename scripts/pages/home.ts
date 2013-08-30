@@ -1,4 +1,5 @@
 $("./body") {
+  remove("./br")
   # Remove twitter iframe
   remove(".//div[@id='baSidebar']")
   
@@ -21,17 +22,13 @@ $("./body") {
   # Move bacontent crap around
   $("//fieldset") {
     $("./div[@id='baContent']/div") {
+      add_class("_heading")
       remove("./@style")
-      
-
-
-      # WHY DOES THIS BREAK THE FOOTER?
-
-      # $(".//h6/parent::div") {
-      #   remove("//@style")
-      #   add_class("_heading")
-      # }
+      $(".//h6/parent::div") {
+        remove(".//@style")
+      }
       move_to("//div[contains(@class,'_home')]")
     }
   }
+
 }

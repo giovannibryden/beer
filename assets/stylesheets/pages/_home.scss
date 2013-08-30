@@ -4,12 +4,6 @@ body {
 	fieldset:not(#QuickSearch){
 		display:none;
 	}
-	#headerMover {
-		position:relative;
-		bottom:50px;
-		// Please don't judge me
-		margin-bottom:-80px;
-	}
 	.pageContent {
 		.titleBar {
 			width:96%;
@@ -29,6 +23,14 @@ body {
 	#baSidebar {
 		padding:10px;
 		width:85%;
+		margin:auto;
+	}
+}
+._heading {
+	width:94%;
+	padding:3%;
+	img {
+		width:100%;
 		margin:auto;
 	}
 }

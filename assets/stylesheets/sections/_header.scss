@@ -32,6 +32,7 @@ header._header {
 		list-style:none;
 		margin:auto;
 		padding:0;
+		border:0;
 
 		a {
 			text-decoration:none;
@@ -66,6 +67,7 @@ header._header {
 		background-color:black;
 	}
 	._button {
+		border:0 !important;
 		@include button(shiny, #e8e8e8);
 		text-align:left;
 		font-family:$helvetica;

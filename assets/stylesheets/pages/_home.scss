@@ -4,17 +4,6 @@ body {
 	fieldset:not(#QuickSearch){
 		display:none;
 	}
-	.pageContent {
-		.titleBar {
-			width:96%;
-			margin:2%;
-			text-align:center;
-			h1 {
-				font-size:18px;
-			}
-		}
-	}
-
 	@include clearfix;
 	width:100%;
 	padding:0;
@@ -34,7 +23,6 @@ body {
 		margin:auto;
 	}
 	h6 {
-		width:100%;
 		background-color:#e8e8e8;
 		height:20px;
 		font-size:16px;
@@ -50,7 +38,17 @@ body {
 	}
 }
 ._home {
-	position:relative;
+	.titleBar {
+		width:94%;
+		margin:3%;
+		text-align:center;
+		h1 {
+			font-size:24px;
+			width:94%;
+			margin:3%;
+		}
+	}
+	position:relative;	
 	bottom:30px;
 	._heroImage {
 		width:100%;

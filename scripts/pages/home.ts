@@ -21,6 +21,16 @@ $("./body") {
   # Move bacontent crap around
   $("//fieldset") {
     $("./div[@id='baContent']/div") {
+      remove("./@style")
+      
+
+
+      # WHY DOES THIS BREAK THE FOOTER?
+
+      # $(".//h6/parent::div") {
+      #   remove("//@style")
+      #   add_class("_heading")
+      # }
       move_to("//div[contains(@class,'_home')]")
     }
   }

@@ -1,7 +1,9 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
 body {
-
+	fieldset:not(#QuickSearch){
+		display:none;
+	}
 	#headerMover {
 		position:relative;
 		bottom:50px;

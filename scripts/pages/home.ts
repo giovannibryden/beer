@@ -14,5 +14,14 @@ $("./body") {
   			}
   		}
   }
-
+  # Move title bar where it belongs, below hero banner
+  $(".//div[@id='content']//div[contains(@class,'titleBar')]") {
+    move_to("//div[contains(@class,'_home')]")
+  }
+  # Move bacontent crap around
+  $("//fieldset") {
+    $("./div[@id='baContent']/div") {
+      move_to("//div[contains(@class,'_home')]")
+    }
+  }
 }
